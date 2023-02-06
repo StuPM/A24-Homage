@@ -1,0 +1,18 @@
+@media screen and (min-width: 770px) {
+  .mainHeader {
+    background-color: black;
+    color: white;
+  }
+  .mainHeader .a24logo {
+    width: 75px;
+  }
+  .mainHeader .burgerMenu {
+    display: none;
+  }
+  .mainHeader .widescreenContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+  }
+}/*# sourceMappingURL=media.css.map */
