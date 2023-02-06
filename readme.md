@@ -6,6 +6,8 @@ As part of the full stack software engineering course at [The Jump](https://www.
 
 Homage created on February 2023, [A24 Feb](https://web.archive.org/web/20230205011801/https://a24films.com/).
 
+My version can be viewed [HERE](https://jump-a24-homage.netlify.app/).
+
 ## To Do
 
 - [ ] Fix header animations
