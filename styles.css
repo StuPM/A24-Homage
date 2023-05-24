@@ -2,7 +2,7 @@
 /* LAYOUT DEBUG */
 html {
   font-size: 62.5%;
-  font-family: "OpenSans";
+  font-family: "Work Sans", sans-serif;
   margin: 0;
 }
 html body {
@@ -83,11 +83,12 @@ nav > ul, nav > div {
 }
 .burgerOverlay li {
   padding-left: 3.4%;
-  font-size: 4.7rem;
+  font-size: 40px;
   line-height: 1.3;
+  padding-bottom: 15px;
 }
 .burgerOverlay li:nth-child(2) {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .burgerOverlay li:nth-child(8) {
   padding-top: 30px;
@@ -99,18 +100,13 @@ nav > ul, nav > div {
 }
 
 .mainItem {
-  -webkit-animation-name: movieTransition;
-          animation-name: movieTransition;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps(5, jump-start);
-          animation-timing-function: steps(5, jump-start);
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: movieTransition;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(5, jump-start);
+  animation-timing-function: linear;
   height: 100%;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 12%;
@@ -134,27 +130,9 @@ nav > ul, nav > div {
   font-size: 2rem;
 }
 
-@-webkit-keyframes movieTransition {
-  0% {
-    background-image: url("./Images/Header//BEAU STATIC.png");
-  }
-  20% {
-    background-image: url("./Images/Header/WHALE STATIC.png");
-  }
-  40% {
-    background-image: url("./Images/Header/BEEF_107_Instream_00001RC.jpg");
-  }
-  60% {
-    background-image: url("./Images/Header/IDL_FILM_EC_1032.jpg");
-  }
-  80% {
-    background-image: url("./Images/Header/EEAAO_Thumbnail_BIG-1.jpg");
-  }
-}
-
 @keyframes movieTransition {
   0% {
-    background-image: url("./Images/Header//BEAU STATIC.png");
+    background-image: url("./Images/Header/BEAU STATIC.png");
   }
   20% {
     background-image: url("./Images/Header/WHALE STATIC.png");
@@ -167,6 +145,9 @@ nav > ul, nav > div {
   }
   80% {
     background-image: url("./Images/Header/EEAAO_Thumbnail_BIG-1.jpg");
+  }
+  100% {
+    background-image: url("./Images/Header/BEAU STATIC.png");
   }
 }
 /* MAIN */
@@ -174,6 +155,9 @@ nav > ul, nav > div {
   padding: 0 6%;
   display: flex;
   flex-wrap: wrap;
+}
+.itemContainer :nth-child(3) {
+  padding-bottom: 0;
 }
 
 section {
@@ -194,6 +178,9 @@ section .itemDetails {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+section .itemDetails.smaller {
+  justify-content: flex-start;
 }
 section .itemImgZoom {
   flex-shrink: 0;
@@ -219,50 +206,45 @@ section .shopNow {
   font-size: 2.6rem;
 }
 
-.fullWidthMarcel {
-  height: 80vh;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 95px;
-  position: relative;
-  color: white;
-  background-image: url("./Images/Body/MARCEL-Trailer-Thumbnail_Wide.png");
-}
-.fullWidthMarcel div {
-  position: absolute;
-  left: 43px;
-}
-.fullWidthMarcel div.fullWidthClass {
-  font-size: 1.7rem;
-  bottom: 89px;
-}
-.fullWidthMarcel div.fullWidthTitle {
-  font-size: 2.65rem;
-  bottom: 50px;
-}
-
+.fullWidthMarcel,
 .fullWidthEverything {
   height: 80vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 95px;
+  flex-shrink: 0;
+  overflow: hidden;
   position: relative;
   color: white;
-  background-image: url("./Images/Body/EEAAO_Thumbnail_BIG-1.jpg");
 }
+.fullWidthMarcel div,
 .fullWidthEverything div {
   position: absolute;
   left: 43px;
 }
+.fullWidthMarcel div.fullWidthClass,
 .fullWidthEverything div.fullWidthClass {
   font-size: 1.7rem;
   bottom: 89px;
 }
+.fullWidthMarcel div.fullWidthTitle,
 .fullWidthEverything div.fullWidthTitle {
   font-size: 2.65rem;
   bottom: 50px;
+}
+.fullWidthMarcel img,
+.fullWidthEverything img {
+  max-height: 100%;
+  position: relative;
+  right: 145px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+.fullWidthMarcel img:hover,
+.fullWidthEverything img:hover {
+  transform: scale(1.05);
+  overflow: hidden;
 }
 
 /* FOOTER */
@@ -271,20 +253,23 @@ footer {
   color: white;
   padding: 50px 143px 100px 50px;
   line-height: 2.2;
+  font-size: 14px;
 }
 footer .footerSocials {
   display: flex;
+  gap: 15px;
+  margin-bottom: 60px;
 }
 footer .footerSocials img {
-  width: 15px;
-  height: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .emailSignup {
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
-  margin-bottom: 5%;
+  margin-bottom: 50px;
 }
 .emailSignup .enterEmail {
   padding: 10px 0 10px 30px;
@@ -296,4 +281,8 @@ footer .footerSocials img {
   border: 1px solid white;
   background-color: white;
   color: black;
+}
+
+.privacy div:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */

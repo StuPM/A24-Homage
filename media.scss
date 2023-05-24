@@ -16,6 +16,21 @@
       justify-content: space-between;
       align-items: center;
       width: 60vw;
+
+      margin-right: 15px;
+
+      div {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .fullWidthMarcel,
+  .fullWidthEverything {
+    > img {
+      max-width: 100%;
+      max-height: none;
+      right: auto;
     }
   }
 }
