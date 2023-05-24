@@ -1,30 +1,16 @@
 # A24 Homage
 
-## To Do
-
-- [ ] Fix header animations
-- [ ] Add header image text hover
-- [ ] Increase text size of items
-- [ ] Add full width hover scale
-- [ ] Finish footer
-- [ ] Finish burger bar
-- [ ] Add links in
-- [ ] Look for improvements in SASS
-
 A homage to the A24 film studio website, created with only CSS and HTML.
-built with only css and html, no javascript.
-
-Homage created on February 2023, [A24 Feb](https://web.archive.org/web/20230205011801/https://a24films.com/).
 
 ## Live link
 
-My version can be viewed [HERE](https://jump-a24-homage.netlify.app/).
+My [Homage](https://jump-a24-homage.netlify.app/) and the real [A24 website](https://web.archive.org/web/20230205011801/https://a24films.com/).
 
-## Features
+## Features and Technology Stack
 
-## Technology Stack
-
-- CSS SCSS
+- SCSS
+  - To provide styling for the website.
+  - With media queries to manage styling for different screen sizes. View the website in mobile view and it will appear slightly different.
 - HTML
 
 ## Authors
